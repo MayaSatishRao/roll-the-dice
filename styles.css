@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #393E46;
+    color:aliceblue;
+}
+
+h1{
+    font-size:3rem;
+    color: aliceblue;
+    margin-bottom: 0.5rem;
+}
+
+.score{
+    width:80vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+.image {
+    height:1000px;
+    min-width:200px;
+    content:'';
+    background-image: url('images/dice1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.buttons{
+    height: 50rem;
+    width:80vw;
+    display:flex;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.buttons button{
+    height:4rem;
+    width:6rem;
+    margin: 1rem 2rem 1rem;
+    background-color: transparent;
+    border:3px solid aliceblue;
+    color:aliceblue;
+    font-size:2rem;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: aliceblue;
+    color:#393E46;
+}
+
+.time, .win{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+@media (max-width:1200px) {
+    html{
+        font-size: 85%;
+    }
+    .image{
+        height:600px;
+        width:400px;
+    }
+
+    .buttons{
+        height:40vh;
+    }
+    .buttons button{
+        margin-top:.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 75%;
+    }
+
+    .image{
+        height:200px;
+        width:200px;
+    }
+    .buttons button{
+        margin-top:.5rem;
+    }
+}
+
+@media (max-width:400px){
+    html{
+        font-size: 65%;
+    }
+
+    .image{
+        height:300px;
+        width:300px;
+    }
+    .buttons button{
+        margin-top:.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
