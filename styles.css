@@ -51,7 +51,7 @@ h1{
     flex-wrap: wrap;
 
 }
-.buttons button{
+.buttons button,.start-button button{
     height:4rem;
     width:6rem;
     margin: 1rem 2rem 1rem;
@@ -60,6 +60,17 @@ h1{
     color:aliceblue;
     font-size:2rem;
     cursor: pointer;
+}
+
+.start-button button{
+    font-size: 1.5rem;
+    padding:0.5rem;
+}
+.grey{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .buttons button:hover{
@@ -72,6 +83,9 @@ h1{
     padding: 0.5rem;
 }
 
+.time{
+    display: none;
+}
 @media (max-width:1200px) {
     html{
         font-size: 85%;
